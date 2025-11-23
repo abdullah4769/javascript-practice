@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light bulb on</title>
+</head>
+<body>
+    <h2>turning on and off the light using javascript</h2>
+    <p>The thing is that i am learning javascript and 
+    i wanted to make a simple project to practice it. So i made a light bulb that turns on and off
+    when you click on the button below
+    </p>
+    <button>Turn on the light</button>
+    <img src="light_bulb_off.png" alt="light bulb off" id="lightBulb" style="display:block; margin-top:20px; width:100px; height:auto;">
+    <button>Turn off the light</button>
+    <script>
+        const lightBulb = document.getElementById('lightBulb');
+        const turnOnButton = document.querySelectorAll('button')[0];
+        const turnOffButton = document.querySelectorAll('button')[1];
+
+        turnOnButton.addEventListener('click', () => {
+            lightBulb.src = 'light_bulb_on.png';
+            lightBulb.alt = 'light bulb on';
+        });
+
+        turnOffButton.addEventListener('click', () => {
+            lightBulb.src = 'light_bulb_off.png';
+            lightBulb.alt = 'light bulb off';
+        });
+        </script>
+</body>
+</html>
