@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Rating Component</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Rating Card -->
+    <div class="card" id="rating-card">
+
+        <h2 class="title">How did we do?</h2>
+        <p class="subtitle">Please let us know how we did with your support experience.</p>
+
+        <div class="stars" id="star-container">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+
+        <button id="submit-btn">Submit</button>
+    </div>
+
+    <!-- Thank You Card -->
+    <div class="card thank-card hidden" id="thank-card">
+        <div class="rating-badge" id="selected-rating">You selected 0 out of 5</div>
+        <h2>Thank You!</h2>
+        <p class="subtitle">We appreciate your feedback. It helps us improve our service.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
